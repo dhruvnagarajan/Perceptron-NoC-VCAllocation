@@ -507,7 +507,7 @@ void InputChannel<num_op> :: transmit_flit()
 
                             // read next VCid sent by VC
                             UI _vcid = nextVCID.read();
-                            cout << "\n\t_vcid:" << _vcid << endl;
+                            // cout << "\n\t_vcid:" << _vcid << endl;
                             vc[vc_to_serve].vc_next_id = _vcid;
                             //if(vc[vc_to_serve].vc_next_id == NUM_VCS+1)
                             //cout<<"\n NEXT VCID(transmit flit)& tileID[not toward core] & dir to: "<<vc[vc_to_serve].vc_next_id<<" & "<<tileID<<" & "<<i;
